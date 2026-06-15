@@ -29,13 +29,29 @@
       <h2>My Documentation</h2>
 
       <nav>
-        <a href="#titleone">Title 1</a>
-        <a href="#titletwo">Title 2</a>
-        <a href="#titletree">Title 3</a>
-        <a href="#titlefour">Title 4</a>
-        <a href="#titlefive">Title 5</a>
-        <a href="#titlesix">Title 6</a>
-        <a href="#titleseven">Title 7</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#git-version">Git Version</a>
+        <a href="#git-init">Git Init</a>
+        <a href="#git-config">Git Config</a>
+        <a href="#git-status">Git Status</a>
+        <a href="#git-add">Git Add</a>
+        <a href="#git-commit">Git Commit</a>
+        <a href="#git-log">Git Log</a>
+        <a href="#git-ignore">Git Ignore</a>
+        <a href="#git-branch">Git Branch</a>
+        <a href="#git-merge">Gir Merge</a>
+        <a href="#git-restore">Git Restore</a>
+        <a href="#git-stash">Git Stash</a>
+        <a href="#git-checkout">Navigating Between Commits</a>
+        <a href="#git-reset">Git Reset</a>
+        <a href="#git-revert">Git Revert</a>
+        <a href="#git-diff">Git Diff</a>
+        <a href="#git-rebase">Git Rebase</a>
+        <a href="#git-remote">Git Remote</a>
+        <a href="#git-fetch">Git Fetch</a>
+        <a href="#git-pull">Git Pull</a>
+        <a href="#git-push">Git Push</a>
+
       </nav>
 
     </aside>
@@ -43,70 +59,330 @@
     <!-- SAĞ İÇERİK (%75) -->
     <main class="content">
 
-      <section id="titleone">
-        <h2>Title One</h2>
-        <p>Lorem Ipsum is simply dummy text</p>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Every technology is best learned from its official documentation.</p>
         
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>https://git-scm.com/docs/git</code></pre>
         </div>
       </section>
 
-      <section id="titletwo">
-        <h2>Title Two</h2>
-        <p>Lorem Ipsum is simply dummy text </p>
+      <section id="git-version">
+        <h2>Git Version</h2>
+        <p>To check whether Git is installed on your system and to view its current version.</p>
         
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>git -v</code></pre>
         </div>
-
       </section>
 
-      <section id="titletree">
-        <h2>Title Tree</h2>
-        <p>Lorem Ipsum is simply dummy text </p>
+      <section id="git-init">
+        <h2>Git Init</h2>
+        <p>Initializes a new Git repository in the current directory. It creates a hidden .git folder that starts tracking changes in the project. </p>
         
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>git init</code></pre>
         </div>
       </section>
 
-      <section id="titlefour">
-        <h2>Title Four</h2>
-        <p>Lorem Ipsum is simply dummy text </p>
+      <section id="git-config">
+        <h2>Git Config</h2>
+        <p>It is used to configure Git with your personal user information. </p>
+
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>git config --global user.name "Your Name"</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git config --global user.email "you@example.com"</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git config --list</code></pre>
         </div>
       </section>
 
-      <section id="titlefive">
-        <h2>Title Five</h2>
-        <p>Lorem Ipsum is simply dummy text </p>
+      <section id="git-status">
+        <h2>Git Status</h2>
+        <p>It shows the status of files in the working directory.</p>
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>git status</code></pre>
         </div>
       </section>
 
-      <section id="titlesix">
-        <h2>Title Six</h2>
-        <p>Lorem Ipsum is simply dummy text </p>
+      <section id="git-add">
+        <h2>Git Add</h2>
+        <p>It adds files to the staging area to prepare them for a commit.</p>
+
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>git add file.txt</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git add .</code></pre>
         </div>
       </section>
 
-      <section id="titleseven">
-        <h2>Title Seven</h2>
-        <p>Lorem Ipsum is simply dummy text </p>
+      <section id="git-commit">
+        <h2>Git Commit</h2>
+        <p>It saves staged changes to the repository as a new snapshot.</p>
         <div class="code-block">
           <button class="copy-btn">Kopyala</button>
-          <pre><code>Lorem Ipsum is simply dummy text</code></pre>
+          <pre><code>git commit -m "your message"</code></pre>
+        </div>
+      </section>
+
+      <section id="git-log">
+        <h2>Git Log</h2>
+        <p>It is used to view the commit history of the project.</p>
+
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git log</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git log --oneline</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git log --graph --oneline</code></pre>
+        </div>
+      </section>
+
+      <section id="git-ignore">
+        <h2>Git Ignore</h2>
+        <p>It is used to specify files and folders that Git should ignore.</p>
+        <p>Example .gitignore file content.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>node_modules/
+.env
+dist/
+.DS_Store</code></pre>
+        </div>
+      </section>
+
+      <section id="git-branch">
+        <h2>Git Branch</h2>
+        <p>It allows you to create separate lines of development within a project.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git branch</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git branch feature</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git switch feature</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git checkout feature</code></pre>
+        </div>
+      </section>
+
+      <section id="git-merge">
+        <h2>Git Merge</h2>
+        <p>It is used to combine changes from different branches.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git merge feature-login</code></pre>
+        </div>
+      </section>
+
+      <section id="git-restore">
+        <h2>Git Restore</h2>
+        <p>It is used to discard changes made in files.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git restore file.txt</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git restore .</code></pre>
+        </div>
+      </section>
+
+      <section id="git-stash">
+        <h2>Git Stash</h2>
+        <p>It is used to temporarily save changes and clean the working directory.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git stash</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git stash pop</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git stash list</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git stash drop</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git stash apply stash@{0}</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git stash clear</code></pre>
+        </div>
+      </section>
+
+      <section id="git-checkout">
+        <h2>Navigating Between Commits</h2>
+        <p>It is used to move between different commits in the project history to inspect old versions.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git checkout commit-hash</code></pre>
+        </div>
+      </section>
+
+      <section id="git-reset">
+        <h2>Git Reset</h2>
+        <p>It is used to undo commits or move the project back to a previous state.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git reset commit-hash</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git reset --soft commit-hash</code></pre>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git reset --hard commit-hash</code></pre>
+        </div>
+      </section>
+
+      <section id="git-revert">
+        <h2>Git Revert</h2>
+        <p>It creates a new commit that undoes the changes from a previous commit.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git revert commit-hash</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git reset --soft commit-hash</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git reset --hard commit-hash</code></pre>
+        </div>
+      </section>
+
+      <section id="git-diff">
+        <h2>Git Diff</h2>
+        <p>It is used to show line-by-line changes between file versions.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git diff</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git diff --staged</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git diff head</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git diff commit1 commit2</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git diff main feature-login</code></pre>
+        </div>
+      </section>
+
+      <section id="git-rebase">
+        <h2>Git Rebase</h2>
+        <p>It is used to move a branch's commits on top of another branch's latest state.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git switch feature-login</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git rebase main</code></pre>
+        </div>
+      </section>
+
+      <section id="git-remote">
+        <h2>Git Remote</h2>
+        <p>It is used to manage connections between a local repository and remote repositories.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git remote -v</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git remote add origin https://github.com/user/repo.git</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git remote set-url origin https://github.com/user/new-repo.git</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git remote remove origin</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git remote add origin https://github.com/user/repo.git</code></pre>
+        </div>
+      </section>
+
+      <section id="git-fetch">
+        <h2>Git Fetch</h2>
+        <p>It is used to download the latest changes from a remote repository without merging them.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git fetch</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git fetch origin</code></pre>
+        </div>
+      </section>
+
+      <section id="git-pull">
+        <h2>Git Pull</h2>
+        <p>It is used to fetch and merge changes from a remote repository into the current branch.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git pull</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git pull origin main</code></pre>
+        </div>
+      </section>
+
+      <section id="git-push">
+        <h2>Git Push</h2>
+        <p>It is used to upload local commits to a remote repository.</p>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git push</code></pre>
+        </div>
+        <div class="code-block">
+          <button class="copy-btn">Kopyala</button>
+          <pre><code>git push origin main</code></pre>
         </div>
       </section>
 
